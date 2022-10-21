@@ -7,12 +7,32 @@ status: Published
 feedback link: Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git) 
 analytics account: ID de Google Analytics 
  
-# Titulo 
-Bastionado de BIOS/UEFI
+
+# Bastionado de BIOS/UEFI
+
+<google codelab-step label="Acceso a BIOS/UEFI"> 
+
+## Entramos en la BIOS/UEFI
+
+Para entrar en la BIOS reiniciamos nuestro sistema y pulsamos repetidamente la tecla suprimir:
 
 
-<google codelab-step label="Sección 1"> 
+</google codelab-step>
+<google codelab-step label="Paso 2"> 
 
+<google codelab-step>
+<google codelab-step label="Paso 3"> 
+
+<google codelab-step>
+<google codelab-step label="Paso 4"> 
+
+<google codelab-step>
+<google codelab-step label="Paso 5"> 
+
+<google codelab-step>
+<google codelab-step label="Paso 6"> 
+
+<google codelab-step>
 
 ## Sección 1 
 Duration: 0:10:00
@@ -44,8 +64,7 @@ Texto plano en una lista con viñetas:
  
 ¡Ya tienes tu lista numerada creada! 
 
-</google codelab-step>
-<google codelab-step label="Sección 2"> 
+
  
 ## Sección 2 
 Duration: 0:05:00 
@@ -62,6 +81,6 @@ Ejemplo de enlace
 ### Incrusta un iframe 
  
 !https://codepen.io/tzoght/embed/yRNZaP
-<google codelab-step>
+
 
 IMPORTANTE AHORA MISMO INTENTAR IDENTIFICAR LA CONTRASEÑA DE POWER ON O DE USUARIO EN LA BIOS
