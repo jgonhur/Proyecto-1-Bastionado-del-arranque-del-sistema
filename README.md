@@ -7,10 +7,10 @@ status: Published
 feedback link: Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git) 
 analytics account: ID de Google Analytics 
  
+<google codelab-step label="Acceso a BIOS/UEFI">
 
 # Bastionado de BIOS/UEFI
-
-<google codelab-step label="Acceso a BIOS/UEFI"> 
+ 
 
 ## Entramos en la BIOS/UEFI
 
