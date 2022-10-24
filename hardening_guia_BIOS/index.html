@@ -1,0 +1,80 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Bastionado de BIOS/UEFI</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="hardening_guia_BIOS"
+                  title="Bastionado de BIOS/UEFI"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Establecemos contraseñas" duration="0">
+        <p> Para entrar en la BIOS reiniciamos nuestro sistema y pulsamos repetidamente la tecla suprimir. Una vez, en la BIOS entramos en el menú de Seguridad:  </p>
+<p class="image-container"><img alt="menu_seguridad" src="img\\4940f6eda1273f24.bmp"></p>
+<h2 is-upgraded>Contraseña de administrador de BIOS </h2>
+<p> Ahora vamos a establecer una contraseña para el administrador de la BIOS, de esta manera evitaremos que cualquiera que entre en la BIOS pueda modificar ciertos parámetros que pueden comprometer nuestro sistema.  </p>
+<p> Seleccionamos la opción de <strong> Administrator Password  </strong></p>
+<p class="image-container"><img alt="admin_password" src="img\\1bf839b9646e54f1.bmp"></p>
+<h2 is-upgraded>Contraseña de usuario o Power-On </h2>
+<p> Establecemos una contraseña para el arranque del sistema, añadiendo otra capa de seguridad más:  </p>
+<p> Seleccionamos la opción de <strong> User Password  </strong></p>
+<p class="image-container"><img alt="user_password" src="img\\3a5e6ef5008bb900.bmp"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Opciones de arranque y permisos" duration="0">
+        <p> En este apartado vamos a ver cómo podemos configurar los permisos para evitar el arranque desde dispositivos no autorizados y en su defecto modificar el orden del arranque de manera que sea lo más segura posible.  </p>
+<h2 is-upgraded>Evitando el arranque desde dispositivos externos </h2>
+<p> Modificaremos los permisos de manera que sólo sea posible realizar el arranque desde el disco duro, dejando &#34;Disabled&#34; el resto de dispositivos:  </p>
+<p class="image-container"><img alt="permiso_usb" src="img\\6254932f59eb612c.bmp"></p>
+<p>El resultado sería el siguiente:</p>
+<p class="image-container"><img alt="permiso_usb2" src="img\\d0db3e899d26116d.bmp"></p>
+<h2 is-upgraded>Orden de arranque seguro </h2>
+<p> Vamos a evitar el arranque desde dispositivos priorizando el disco duro de nuestro sistema, de esta manera, mientras esté conectado nuestro disco duro, no podrán realizarse arranques desde dispositivos externos en caso de que tengan alguna clase de permiso para ello.  </p>
+<p> En primer lugar, pondremos nuestro disco duro, luego seleccionaremos el resto de dispositivos en el siguiente orden: </p>
+<p class="image-container"><img alt="orden_arranque" src="img\\f180c48c0dda1eb7.bmp"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Otras opciones de seguridad" duration="0">
+        <p> En este apartado analizaremos otras opciones de seguridad como es el <strong>Secure Boot</strong>.  </p>
+<p>Secure Boot es una herramienta de seguridad que viene incluída en UEFI, y que impide la ejecución de software no firmado o certificado en el arranque del sistema. De esta manera nuestro PC arrancará sólo con software de confianza del OEM (fabricante de equipos originales)</p>
+<p>Podemos usarlo simplemente como otra capa de seguridad en nuestro bastionado de la BIOS</p>
+<p>A continuación veremos dónde podemos habilitarlo, aunque por defecto estará habilitado. Si no lo está habilitado lo habilitaremos dejando &#34;Enabled&#34; el <strong>Secure Boot Support:</strong></p>
+<p class="image-container"><img alt="secure_boot" src="img\\ae6eac22545fec94.bmp"></p>
+<p> También existe la opción de personalizar el <strong>Secure Boot</strong> con otras claves de arranque seguro. </p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

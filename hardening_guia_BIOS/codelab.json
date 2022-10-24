@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-10-24T19:35:10+01:00",
+  "id": "hardening_guia_BIOS",
+  "duration": 0,
+  "title": "Bastionado de BIOS/UEFI",
+  "summary": "Guía para bastionado de BIOS/UEFI",
+  "source": ".\\hardening_bios.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "hardening_guia_BIOS"
+}
